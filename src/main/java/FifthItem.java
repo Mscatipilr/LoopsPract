@@ -10,11 +10,12 @@ public class FifthItem {
         ArrayList<String> listOfStrings = new ArrayList<String>();
         while (true) { //while (in.hasNextLine()) {
             String input = in.nextLine();
-            listOfStrings.add(input);
             if (input.isEmpty()) {
                 System.out.println("The fifth item in the list is: " + listOfStrings.get(4));
                 break;
             }
+            listOfStrings.add(input);
+
         }
     }
 }

@@ -10,12 +10,13 @@ public class HowLarge {
         ArrayList<String> listOfStrings = new ArrayList<String>();
         while (true) { //while (in.hasNextLine()) {
             String input = in.nextLine();
-            listOfStrings.add(input);
             if (input.isEmpty()) {
                 int length = listOfStrings.size() - 1;
                 System.out.println("The total amount of items in the list was: " + length);
                 break;
             }
+            listOfStrings.add(input);
+
         }
     }
 }

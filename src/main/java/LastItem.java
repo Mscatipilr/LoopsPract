@@ -12,12 +12,13 @@ public class LastItem {
     ArrayList<String> listOfStrings = new ArrayList<String>();
         while (true){
             String input = in.nextLine();
-            listOfStrings.add(input);
             if (input.isEmpty()) {
-            int length = listOfStrings.size() - 2;
-            System.out.println("The last item in the list is: " + listOfStrings.get(length) );
-            break;
+                int length = listOfStrings.size() - 2;
+                System.out.println("The last item in the list is: " + listOfStrings.get(length) );
+                break;
             }
+            listOfStrings.add(input);
+
         }
 
 }}
