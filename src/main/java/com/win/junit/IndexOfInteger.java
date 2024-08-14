@@ -1,3 +1,5 @@
+package com.win.junit;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -22,6 +24,9 @@ public class IndexOfInteger {
         }
         System.out.println("What number are you looking for in the list?");
         int num = in.nextInt();
-        System.out.println(num + " is at index " + list.indexOf(num));
+        System.out.println(getIndex(list, num));
+    }
+    public static String getIndex(ArrayList<Integer> list, int num) {
+        return num + " is at index " + list.indexOf(num);
     }
 }

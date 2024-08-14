@@ -1,3 +1,5 @@
+package com.win.junit;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 /* User inputs strings until the user enters an empty string.
@@ -11,12 +13,15 @@ public class HowLarge {
         while (true) { //while (in.hasNextLine()) {
             String input = in.nextLine();
             if (input.isEmpty()) {
-                int length = listOfStrings.size() - 1;
-                System.out.println("The total amount of items in the list was: " + length);
+                System.out.println(howLarge(listOfStrings));
                 break;
             }
             listOfStrings.add(input);
 
         }
+    }
+    public static String howLarge(ArrayList<String> listOfStrings) {
+
+        return "The total amount of items in the list was: " + listOfStrings.size();
     }
 }
